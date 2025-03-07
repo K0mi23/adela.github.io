@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Psicoeducación: Relaciones Tóxicas</title>
+    <style>
+        :root {
+            --primary-color: #5d4a96;
+            --secondary-color: #f0e6ff;
+            --accent-color: #ff6b6b;
+            --text-color: #333;
+            --light-text: #fff;
+            --dark-bg: #2a2a2a;
+            --shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f9f9f9;
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+        
+        header {
+            background: linear-gradient(135deg, var(--primary-color), #8a71cc);
+            color: var(--light-text);
+            padding: 2rem 0;
+            text-align: center;
+            box-shadow: var(--shadow);
+        }
+        
+        .header-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .subtitle {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 2rem;
+        }
+        
+        .intro {
+            background-color: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: var(--shadow);
+            margin-bottom: 2rem;
+        }
+        
+        .section-title {
+            color: var(--primary-color);
+            margin: 1.5rem 0 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid var(--secondary-color);
+        }
+        
+        .card-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+        
+        .card {
+            background-color: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: transform 0.3s ease;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .card-img {
+            height: 200px;
+            overflow: hidden;
+        }
+        
+        .card-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .card-content {
+            padding: 1.5rem;
+        }
+        
+        .card h3 {
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+        
+        .alert-box {
+            background-color: var(--accent-color);
+            color: white;
+            padding: 1.5rem;
+            border-radius: 10px;
+            margin: 2rem 0;
+        }
+        
+        .quiz-container {
+            background-color: var(--secondary-color);
+            padding: 2rem;
+            border-radius: 10px;
+            margin: 2rem 0;
+        }
+        
+        .quiz-item {
+            background-color: white;
+            padding: 1.5rem;
+            border-radius: 10px;
+            margin-bottom: 1rem;
+            box-shadow: var(--shadow);
+        }
+        
+        .resources {
+            background-color: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: var(--shadow);
+            margin: 2rem 0;
+        }
+        
+        .resource-item {
+            margin-bottom: 1rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid var(--secondary-color);
+        }
+        
+        .conclusion {
+            background-color: var(--dark-bg);
+            color: var(--light-text);
+            padding: 2rem;
+            border-radius: 10px;
+            margin: 2rem 0;
+        }
+        
+        .conclusion h2 {
+            color: white;
+            border-bottom: 2px solid var(--accent-color);
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .conclusion ol {
+            padding-left: 1.5rem;
+        }
+        
+        .conclusion li {
+            margin-bottom: 1rem;
+        }
+        
+        footer {
+            background-color: var(--dark-bg);
+            color: var(--light-text);
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: 3rem;
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .card-container {
+                grid-template-columns: 1fr;
+            }
+            
+            .container {
+                padding: 0 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>Relaciones Tóxicas</h1>
+            <p class="subtitle">Reconocer, comprender y superar patrones dañinos en la relación de pareja</p>
+        </div>
+    </header>
+    
+    <div class="container">
+        <section class="intro">
+            <h2 class="section-title">¿Qué son las relaciones tóxicas?</h2>
+            <p>Una relación tóxica es aquella en la que los patrones de interacción entre las personas involucradas generan más daño que bienestar. Estas relaciones suelen caracterizarse por dinámicas de control, manipulación, falta de respeto y desequilibrio emocional que afectan negativamente la salud mental y el bienestar de quienes forman parte de ellas.</p>
+            <p>Identificar una relación tóxica es el primer paso para poder transformarla o, si es necesario, tomar la decisión de terminarla. La psicoeducación sobre este tema ayuda a desarrollar relaciones más saludables y equilibradas.</p>
+        </section>
+        
+        <h2 class="section-title">Señales de alarma en una relación tóxica</h2>
+        <div class="card-container">
+            <div class="card">
+                <div class="card-img">
+                    <img src="/api/placeholder/400/320" alt="Control y celos excesivos">
+                </div>
+                <div class="card-content">
+                    <h3>Control y celos excesivos</h3>
+                    <p>Vigilancia constante, revisión de mensajes o redes sociales, restricciones sobre amistades o actividades, y celos injustificados son signos claros de una dinámica tóxica basada en la desconfianza.</p>
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="card-img">
+                    <img src="/api/placeholder/400/320" alt="Manipulación emocional">
+                </div>
+                <div class="card-content">
+                    <h3>Manipulación emocional</h3>
+                    <p>Uso de culpa, victimismo, chantaje emocional o amenazas para conseguir lo que se desea. La manipulación puede ser sutil y difícil de detectar pero genera un desgaste emocional significativo.</p>
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="card-img">
+                    <img src="/api/placeholder/400/320" alt="Falta de respeto y humillación">
+                </div>
+                <div class="card-content">
+                    <h3>Falta de respeto y humillación</h3>
+                    <p>Insultos, críticas constantes, humillaciones (en público o en privado) y menosprecios que erosionan la autoestima y dignidad de la otra persona.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="card-container">
+            <div class="card">
+                <div class="card-img">
+                    <img src="/api/placeholder/400/320" alt="Aislamiento social">
+                </div>
+                <div class="card-content">
+                    <h3>Aislamiento social</h3>
+                    <p>Intentos de separar a la pareja de su círculo social y familiar, generando dependencia emocional y reduciendo sus sistemas de apoyo.</p>
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="card-img">
+                    <img src="/api/placeholder/400/320" alt="Ciclos de tensión-agresión-reconciliación">
+                </div>
+                <div class="card-content">
+                    <h3>Ciclos de tensión-agresión-reconciliación</h3>
+                    <p>Periodos de aparente calma seguidos de tensión creciente que culmina en episodios de agresión (verbal, psicológica o física) y posteriores reconciliaciones intensas que refuerzan el ciclo.</p>
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="card-img">
+                    <img src="/api/placeholder/400/320" alt="Desequilibrio de poder">
+                </div>
+                <div class="card-content">
+                    <h3>Desequilibrio de poder</h3>
+                    <p>Una relación donde una persona tiene significativamente más poder y control sobre decisiones, recursos o dinámicas de la relación, generando desigualdad y subordinación.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="alert-box">
+            <h2>IMPORTANTE</h2>
+            <p>Si identificas señales de violencia física o amenazas a tu integridad en tu relación, es fundamental buscar ayuda profesional inmediata. Recuerda que la violencia tiende a escalar con el tiempo y tu seguridad es lo más importante.</p>
+        </div>
+        
+        <h2 class="section-title">Impacto de las relaciones tóxicas en la salud mental</h2>
+        <p>Las relaciones tóxicas no solo afectan la dinámica de pareja, sino que tienen consecuencias significativas en la salud mental y emocional de quienes las experimentan:</p>
+        
+        <div class="card-container">
+            <div class="card">
+                <div class="card-content">
+                    <h3>Deterioro de la autoestima</h3>
+                    <p>La exposición constante a críticas, desvalorización y maltrato erosiona la percepción de valor personal y la confianza en uno mismo.</p>
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="card-content">
+                    <h3>Ansiedad y estrés crónico</h3>
+                    <p>La imprevisibilidad y la sensación de "caminar sobre cáscaras de huevo" generan un estado permanente de alerta y ansiedad.</p>
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="card-content">
+                    <h3>Depresión</h3>
+                    <p>La sensación de atrapamiento, impotencia y desesperanza puede conducir a estados depresivos.</p>
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="card-content">
+                    <h3>Aislamiento y soledad</h3>
+                    <p>El distanciamiento de redes de apoyo aumenta la vulnerabilidad y refuerza la dependencia hacia la relación tóxica.</p>
+                </div>
+            </div>
+        </div>
+        
+        <section class="quiz-container">
+            <h2 class="section-title">Autoevaluación: ¿Estás en una relación tóxica?</h2>
+            <p>Responde honestamente a las siguientes preguntas para reflexionar sobre tu relación:</p>
+            
+            <div class="quiz-item">
+                <p><strong>1. ¿Sientes que debes pedir permiso o justificar constantemente tus acciones, amistades o decisiones?</strong></p>
+            </div>
+            
+            <div class="quiz-item">
+                <p><strong>2. ¿Has notado cambios negativos en tu autoestima desde que comenzó la relación?</strong></p>
+            </div>
+            
+            <div class="quiz-item">
+                <p><strong>3. ¿Te sientes frecuentemente ansioso/a o con miedo de la reacción de tu pareja?</strong></p>
+            </div>
+            
+            <div class="quiz-item">
+                <p><strong>4. ¿Has abandonado actividades, metas personales o relaciones importantes por complacer a tu pareja?</strong></p>
+            </div>
+            
+            <div class="quiz-item">
+                <p><strong>5. ¿Sientes que das mucho más de lo que recibes en la relación?</strong></p>
+            </div>
+            
+            <p style="margin-top: 1.5rem;">Si has respondido afirmativamente a varias de estas preguntas, podría ser útil buscar apoyo profesional para evaluar tu situación y recibir orientación adecuada.</p>
+        </section>
+        
+        <h2 class="section-title">¿Cómo transformar una relación tóxica?</h2>
+        
+        <div class="card-container">
+            <div class="card">
+                <div class="card-img">
+                    <img src="/api/placeholder/400/320" alt="Reconocer el problema">
+                </div>
+                <div class="card-content">
+                    <h3>1. Reconocer el problema</h3>
+                    <p>El primer paso es reconocer y aceptar que existe un patrón dañino. Esto implica superar la negación y ver la situación con objetividad.</p>
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="card-img">
+                    <img src="/api/placeholder/400/320" alt="Establecer límites claros">
+                </div>
+                <div class="card-content">
+                    <h3>2. Establecer límites claros</h3>
+                    <p>Definir qué comportamientos son inaceptables y comunicarlos con firmeza. Los límites saludables son fundamentales para cualquier relación equilibrada.</p>
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="card-img">
+                    <img src="/api/placeholder/400/320" alt="Mejorar la comunicación">
+                </div>
+                <div class="card-content">
+                    <h3>3. Mejorar la comunicación</h3>
+                    <p>Aprender a expresar necesidades, emociones y preocupaciones de manera asertiva, sin agresividad ni pasividad. Practicar la escucha activa.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="card-container">
+            <div class="card">
+                <div class="card-img">
+                    <img src="/api/placeholder/400/320" alt="Buscar ayuda profesional">
+                </div>
+                <div class="card-content">
+                    <h3>4. Buscar ayuda profesional</h3>
+                    <p>La terapia de pareja puede proporcionar herramientas específicas y un espacio seguro para abordar patrones disfuncionales con guía especializada.</p>
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="card-img">
+                    <img src="/api/placeholder/400/320" alt="Fortalecer la individualidad">
+                </div>
+                <div class="card-content">
+                    <h3>5. Fortalecer la individualidad</h3>
+                    <p>Recuperar espacios personales, intereses propios y relaciones sociales independientes. Una relación sana se compone de dos personas completas.</p>
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="card-img">
+                    <img src="/api/placeholder/400/320" alt="Evaluar la viabilidad">
+                </div>
+                <div class="card-content">
+                    <h3>6. Evaluar la viabilidad</h3>
+                    <p>No todas las relaciones tóxicas pueden o deben salvarse. A veces, la opción más saludable es terminar la relación, especialmente si hay violencia o la otra persona no reconoce el problema.</p>
+                </div>
+            </div>
+        </div>
+        
+        <section class="resources">
+            <h2 class="section-title">Recursos de apoyo</h2>
+            
+            <div class="resource-item">
+                <h3>Líneas de ayuda</h3>
+                <p>Existen líneas telefónicas gratuitas especializadas en atención a personas en relaciones conflictivas o violentas que ofrecen orientación y apoyo inmediato.</p>
+            </div>
+            
+            <div class="resource-item">
+                <h3>Grupos de apoyo</h3>
+                <p>Compartir experiencias con otras personas que han vivido situaciones similares puede ser terapéutico y ofrecer perspectivas valiosas.</p>
+            </div>
+            
+            <div class="resource-item">
+                <h3>Terapia individual</h3>
+                <p>El acompañamiento psicológico individual puede ayudar a sanar heridas emocionales, recuperar la autoestima y desarrollar patrones relacionales más saludables.</p>
+            </div>
+            
+            <div class="resource-item">
+                <h3>Terapia de pareja</h3>
+                <p>Si ambos miembros están comprometidos con el cambio, la terapia de pareja puede ofrecer herramientas específicas para transformar la dinámica relacional.</p>
+            </div>
+        </section>
+        
+        <section class="conclusion">
+            <h2>Conclusiones</h2>
+            <ol>
+                <li>Las relaciones tóxicas no son simplemente "relaciones difíciles", sino patrones de interacción que causan daño ps
